@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.6;
+    color:rgb(44, 41, 41);
+    background-color: #f4f4f4f4;
+
+}
+
+header{
+    color:rgb(44, 41, 41);
+    background: #7e7c7c;
+    padding: 25px;
+}
+
+header h1{
+    margin: 0px;
+    font-size: 50px;
+}
+
+header p{
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding:0px;
+    color: #fff;
+   
+}
+
+header nav ul li{
+    padding: 0 20px;
+    
+}
+
+header nav ul li:hover{
+    color: #cc1414;
+    text-decoration: underline;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main{
+    padding: 20px;
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container nav ul{
+    flex-wrap: wrap;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+}
+
+
+main > section{
+   background: #ffffff;
+   padding: 25px;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0,0,0, 0.3); 
+}
+
+main section pre{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button{
+   margin: 10px 0px; 
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+}
+
+form button{
+    background-color: #6c6c6e;
+    color: #fff;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #333;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #6c6c6e;
+}
+
+
+@media (max-width:768px){
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .header-container{
+        padding: 10px;
+    }
+    main{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+

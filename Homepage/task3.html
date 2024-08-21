@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="task3.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="div-container">
+    <header>
+      <h1>
+        Task 3: Create a registration form with various input types (text,
+        email, password, etc).
+      </h1>
+      <a href="index.html">Back to Task List</a>
+    </header>
+    <main>
+      <section>
+        <h2>Description</h2>
+        <p>
+          Design and implement a registration form that includes various input
+          types such as text, email, password, and more.
+        </p>
+      </section>
+      <section>
+        <h2>HTML Code</h2>
+        <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Registration Form&lt;/title&gt;
+    &lt;/head&gt;
+                
+    &lt;body&gt;
+    &lt;div class="main"&gt;
+      &lt;h2&gt;Registration Form&lt;/h2&gt;
+      &lt;p&gt;Please! fill the form to register to an account!&lt;/p&gt;
+      &lt;hr /&gt;
+      &lt;form action=""&gt;
+        &lt;label for="firstname"&gt;First Name:&lt;/label&gt;
+        &lt;input type="text" id="firstname" name="firstname" required /&gt;
+
+        &lt;label for="lastname"&gt;Last Name:&lt;/label&gt;
+        &lt;input type="text" id="lastname" name="lastname" required /&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required /&gt;
+
+        &lt;label for="password"&gt;Password:&lt;/label&gt;
+        &lt;input
+          type="password"
+          id="password"
+          name="password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-].{8,16}$)"
+          title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long"
+          required
+        /&gt;
+
+        &lt;label for="repassword"&gt;Confirm-Password:&lt;/label&gt;
+        &lt;input type="password" id="repassword" name="repassword" required /&gt;
+
+        &lt;label for="mobile"&gt;Contact:&lt;/label&gt;
+        &lt;input
+          type="text"
+          inputmode="numeric"
+          id="mobile"
+          name="mobile"
+          maxlength="10"
+          required
+        /&gt;
+
+        &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+        &lt;select id="gender" name="gender" required&gt;
+          &lt;option value="select" selected&gt;select&lt;/option&gt;
+          &lt;option value="male"&gt;Male&lt;/option&gt;
+          &lt;option value="female"&gt;Female&lt;/option&gt;
+          &lt;option value="other"&gt;Other&lt;/option&gt;
+        &lt;/select&gt;
+
+        &lt;button type="submit"&gt;Register&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+                
+            </code></pre>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <pre> &lt;style&gt;
+        body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #dbd9d9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #aaa8a8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+    color: #1a0020;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #080808;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #6154da;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(97, 84, 218, 0.5);
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #6154da;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+hr {
+    border: 0;
+    
+}
+&lt;/style&gt;<code>
+        
+      </code></pre>
+      </section>
+    </div>
+    <div class="image-container">
+      <section>
+        <h2>Output</h2>
+        <div class="container">
+          <p>
+            <picture><img src="./Images/t3.png" alt="Output" /></picture>
+          </p>
+        </div>
+      </section>
+    </div>
+    </main>
+  </div>
+  </body>
+</html>

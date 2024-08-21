@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-container">
+        <header>
+          <img src="./Images/img1.png" alt="image not found" />
+          <h1>Welcome back!</h1>
+          <p>Enter your unlimited access to data & information.</p>
+        </header>
+        <main>
+          <section>
+            <form action="">
+              <label for="email">Email <span class="required">*</span></label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your mail address"
+                required
+              />
+              <div class="password-container">
+                <label for="password"
+                  >Password <span class="required">*</span></label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                  required
+                />
+                <i class="fa fa-eye-slash" id="pass"></i>
+              </div>
+
+              <div class="checkbox-div">
+                <div class="remember-me">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox">Remember me</label>
+                </div>
+                <p><a href="#">Forgot your password?</a></p>
+              </div>
+              <button class="log-in" type="submit">Log in</button>
+            </form>
+            <div class="hr-text">
+              <span>Or, Login with</span>
+            </div>
+            <button class="google-btn">
+              <img
+                src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg"
+                alt="Google icon"
+              />Sign up with Google
+            </button>
+          </section>
+          <div class="footer">
+            <p>Don't have an account? <a href="#">Register here</a></p>
+          </div>
+        </main>
+      </div>
+      <div class="image-container">
+        <img src="./Images/image3.png" alt="Login image" />
+      </div>
+    </div>
+  </body>
+</html>
